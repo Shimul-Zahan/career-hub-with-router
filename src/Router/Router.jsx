@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Home from '../Home/Home';
 import Root from '../Root/Root';
 import JobDetails from '../JobDetails/JobDetails';
+import AllApplication from '../AllAplication/AllApplication';
 
 const router = createBrowserRouter([
     {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/appliedjobs',
-                element: <h1>Hello appliedjobs Component</h1>
+                element: < AllApplication />
             },
             {
                 path: '/blog',
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
                 path: '/startapplying',
                 element: <h1>Hello startapplying Component</h1>
             },
+            // {
+            //     path: '/applied',
+                
+            // },
             {
                 path: '/job/:id',
                 element: <JobDetails />,
